@@ -1759,12 +1759,12 @@ paths:
           source: >-
             CompletableFuture<ApiResponse<GetMaxSpendableAmountResponse>>
             response = fireblocks.vaults().getMaxSpendableAmount(vaultAccountId,
-            assetId, manualSignging);
+            assetId, manualSigning);
         - lang: Python
           source: >-
             response =
             fireblocks.vaults.get_max_spendable_amount(vault_account_id,
-            asset_id, manual_signging);
+            asset_id, manual_signing);
   /vault/accounts/{vaultAccountId}/{assetId}/addresses/{addressId}:
     put:
       summary: Update address description
